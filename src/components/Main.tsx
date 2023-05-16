@@ -48,7 +48,9 @@ function App() {
 
     const result = await fetchCode(code, language, convertToLanguage);
 
-    if (result) {
+    if (result !== 'You Are Not Authorize') {
+      userConvertedCode(result);
+    } else {
       userConvertedCode(result);
     }
   };

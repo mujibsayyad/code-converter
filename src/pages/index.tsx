@@ -2,8 +2,8 @@ import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Main.module.css';
 
-import CodeConverter from './context/LanguageContext';
-import Main from '../pages/components/Main';
+import CodeConverter from '@/context/LanguageContext';
+import Main from '../components/Main';
 
 const inter = Inter({ subsets: ['latin'] });
 

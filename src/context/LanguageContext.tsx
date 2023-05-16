@@ -36,7 +36,7 @@ const ConverterContext = createContext<ConverterContextInterface | undefined>(
   undefined
 );
 
-export const CodeConverter = ({ children }: ConverterProps) => {
+const CodeConverter = ({ children }: ConverterProps) => {
   const [code, setCode] = useState<string>('');
   const [convertedCode, setConvertedCode] = useState<string>('');
   const [language, setLanguage] = useState<string>('');
@@ -82,8 +82,12 @@ export const CodeConverter = ({ children }: ConverterProps) => {
     });
 
     const convCodeData = await convCode.json();
-
     setLoading(false);
+
+    if (convCodeData === 'You Are Not Authorize') {
+      return convCodeData;
+    }
+
     return convCodeData.choices[0].text.trim() as string;
   };
 

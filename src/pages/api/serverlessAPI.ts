@@ -35,8 +35,8 @@ export default async function handler(
     });
 
     const data = await response.json();
-    res.send(data);
+    res.status(200).json(data);
   } else {
-    res.status(403).send('You Are Not Authorize');
+    res.status(403).json('You Are Not Authorize');
   }
 }
