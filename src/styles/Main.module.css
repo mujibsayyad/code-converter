@@ -1,0 +1,150 @@
+.main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.heading {
+  line-height: 1rem;
+  padding: 1rem 0;
+  text-align: center;
+  text-transform: capitalize;
+
+  border-radius: 1vw 1vw 10vw 10vw;
+  border-bottom: 0.5vw solid #ff5722;
+}
+
+.heading h1 {
+  letter-spacing: 0.1rem;
+  font-size: 2.5rem;
+}
+
+.heading h2 {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  padding-top: 3rem;
+}
+
+/* lang selector dropdown */
+
+.lang_options {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.lang_options select {
+  border: 1px solid #646cff;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+
+/* codeBlock */
+
+.codeBlock {
+  min-width: 45%;
+  margin: 0 0.08rem;
+}
+
+.ͼ1.cm-focused {
+  outline: none !important;
+}
+
+.ͼ3 .cm-content {
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  width: 2rem;
+}
+
+.ͼ1 .cm-scroller {
+  overflow-x: hidden;
+}
+
+.cm-line {
+  white-space: pre-wrap;
+}
+
+/* convert code button */
+
+.convert_btn {
+  display: flex;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 5rem;
+}
+
+.message h4 {
+  color: black;
+  background-color: #646cff;
+  /* width: fit-content; */
+  padding: 0.5rem 1rem;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .heading h1 {
+    font-size: 1.6rem;
+  }
+
+  .heading h2 {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .flex button {
+    order: 3;
+    margin-top: 1rem;
+    color: black;
+    width: 40%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* lang selector dropdown */
+
+  .lang_options select {
+    color: black;
+  }
+
+  /* codeBlock */
+
+  .codeBlock {
+    min-width: 95%;
+    margin-bottom: 3rem;
+  }
+}

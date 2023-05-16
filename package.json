@@ -1,0 +1,32 @@
+{
+  "name": "code-converter",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@codemirror/lang-cpp": "^6.0.2",
+    "@codemirror/lang-java": "^6.0.1",
+    "@codemirror/lang-javascript": "^6.1.7",
+    "@codemirror/lang-python": "^6.1.2",
+    "@codemirror/lang-rust": "^6.0.1",
+    "@next/font": "13.4.2",
+    "@uiw/react-codemirror": "^4.19.16",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.2",
+    "next": "13.4.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-loader-spinner": "^5.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "20.1.4",
+    "@types/react": "18.2.6",
+    "typescript": "5.0.4"
+  }
+}
