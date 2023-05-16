@@ -11,8 +11,6 @@ const Editor = ({ lang }: any) => {
   const { langOne, userCode } = useConvert();
 
   useEffect(() => {
-    console.log('i ran');
-
     langOne(language);
   }, [language]);
 
