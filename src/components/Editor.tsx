@@ -3,7 +3,6 @@ import CodeMirror from '@uiw/react-codemirror';
 
 import { useConvert } from '../context/LanguageContext';
 import styles from '@/styles/Main.module.css';
-import { log } from 'console';
 
 const Editor = ({ lang }: any) => {
   const [code, setCode] = useState('');
