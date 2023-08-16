@@ -31,6 +31,7 @@ button {
   background-color: #dbdbdb;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: black;
 }
 button:hover {
   border-color: #646cff;

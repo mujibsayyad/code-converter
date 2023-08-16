@@ -4,6 +4,7 @@ import { RotatingLines } from 'react-loader-spinner';
 import Editor from './Editor';
 import Output from './Output';
 import { useConvert } from '../context/LanguageContext';
+import Footer from './Footer';
 
 import { cpp } from '@codemirror/lang-cpp';
 import { java } from '@codemirror/lang-java';
@@ -117,6 +118,8 @@ function App() {
         </button>
         <Output lang={getConvertedLang()} />
       </div>
+
+      <Footer />
     </div>
   );
 }

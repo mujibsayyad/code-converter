@@ -50,6 +50,7 @@
 }
 
 .lang_options select {
+  color: black;
   border: 1px solid #646cff;
   border-radius: 10px;
   padding: 0.5em 1em;
@@ -147,4 +148,36 @@
     min-width: 95%;
     margin-bottom: 3rem;
   }
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 0.5rem;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* background-color: rgb(42, 42, 42); */
+  border: 2px solid rgb(42, 42, 42);
+}
+
+.footer p {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.footer p a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer p a:hover {
+  color: aqua;
+}
+
+.footer i {
+  font-size: 1.1rem;
 }
