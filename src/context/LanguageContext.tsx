@@ -88,7 +88,11 @@ const CodeConverter = ({ children }: ConverterProps) => {
       return convCodeData;
     }
 
-    return convCodeData.choices[0].text.trim() as string;
+    if (convCodeData?.error?.code === 'rate_limit_exceeded') {
+      return 'Too Many Requests.';
+    }
+
+    return convCodeData?.choices[0].text.trim() as string;
   };
 
   return (
