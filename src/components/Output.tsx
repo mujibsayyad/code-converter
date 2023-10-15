@@ -23,7 +23,7 @@ const Output = ({ lang }: any) => {
           >
             <option value='python'>Python</option>
             <option value='javascript'>JavaScript</option>
-            <option value='c++'>C++</option>
+            <option value='cpp'>C++</option>
             <option value='java'>Java</option>
             <option value='rust'>Rust</option>
           </select>
